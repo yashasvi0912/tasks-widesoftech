@@ -1,0 +1,28 @@
+
+TIMELINE OF INTERNET 
+
+1969: The U.S. Department of Defense creates ARPANET, the first network to use packet switching — a foundational step toward the Internet.
+
+1971: The first email is sent over ARPANET.
+
+1983: The term "Internet" is used, and TCP/IP protocol becomes the standard, allowing different networks to communicate.
+
+1989: Tim Berners-Lee proposes the idea of the World Wide Web while working at CERN.
+
+1990: The first web browser, called "WorldWideWeb" (later renamed Nexus), is developed.
+
+1991: The World Wide Web becomes publicly available to users worldwide.
+
+1993: The Mosaic browser is released — it brings images and text together, making the web more user-friendly.
+
+1995: The Internet is commercialized. Major companies like Amazon, eBay, and Yahoo! begin operations.
+
+1998: Google is founded and begins transforming how people search the web.
+
+2004: Facebook launches, marking the rise of social networking.
+
+2007: Apple releases the iPhone, making mobile internet widely accessible.
+
+2010s: Rapid growth in cloud computing, mobile apps, 4G networks, and video streaming platforms like YouTube and Netflix.
+
+2020s: The rise of 5G technology, Internet of Things (IoT), AI-driven services, and global high-speed connectivity.
