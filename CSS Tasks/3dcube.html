@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cube-loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+            transition: all 10s ease;
+        }
+
+        .cube-loader {
+          position: absolute;
+          width: 30%;
+          height: 30%;
+        }
+        .face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: white;
+            background: linear-gradient(to bottom,
+                    hsl(0, 0%, 0%) 12.1%,
+                    hsl(0, 0%, 100%) 100%,
+                    hsl(0, 0%, 0%) 45.6%,
+                    hsl(0, 0%, 100%) 100%,
+                    hsl(0, 0%, 0%) 79.4%,
+                    hsl(0, 0%, 100%) 100%,
+                    hsl(0, 0%, 0%) 100%,
+                    hsl(0, 0%, 100%) 100%,
+                    hsl(0, 0%, 0%) 100%);
+        }
+        .scene:hover > .cube-loader{
+            transform: translate(-50%, -50%) rotateY(500deg) rotateX(360deg);
+        }
+         .face-1 {
+            transform: rotateY(0deg) translateZ(100px);
+            background-color: white;
+        }
+
+        .face-2 {
+            transform: rotateY(180deg) translateZ(100px);
+             background-color:black;
+        }
+
+        .face-3 {
+            transform: rotateY(90deg) translateZ(100px);
+           background-color: white;
+        }
+
+        .face-4 {
+            transform: rotateY(-90deg) translateZ(100px);
+             background-color:black;
+        }
+
+        .face-5 {
+            transform: rotateX(90deg) translateZ(100px);
+            background-color: white;
+        }
+
+        .face-6 {
+            transform: rotateX(-90deg) translateZ(100px);
+            background-color:black;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+<div class="scene">
+    <div class="cube-loader">
+            <div class="face face-1">SAKSHI</div>
+            <div class="face face-2">SONIYA</div>
+            <div class="face face-3">RANUU</div>
+            <div class="face face-4">SHREYA</div>
+            <div class="face face-5">RIYA</div>
+            <div class="face face-6">TEJUU</div>
+    </div>
+</div>
+</body>
+</html>

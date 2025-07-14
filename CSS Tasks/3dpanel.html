@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+          width: 164px;
+          height: 276px;
+          margin: 200px auto;
+          background: rgb(13, 7, 15);
+          border: 3px solid rgb(145, 12, 129);
+          border-radius: 19px;
+          position: relative;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          transition: all 1s ease;
+          color: antiquewhite;
+        }
+        
+        .card::before {
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          bottom: 10px;
+          right: 77px;
+          border-radius: 50%;
+          background-color: rgb(17, 4, 94);
+        }
+        
+        .card__date {
+          display: flex;
+          flex-direction: column;
+          margin-top: 30px;
+        }
+        
+        .time {
+          font-size: 1em;
+          text-decoration: underline burlywood;
+        }
+        .time1{
+            font-size: 30px;
+            color: aqua;
+        }
+        .date{
+            font-size: 2rem;
+            color: aqua;
+        }
+        .date1{
+            font-size: 1rem;
+            text-decoration: underline burlywood;
+        }
+        
+        .popup {
+          background-color: #444746;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          font-size: .8em;
+          padding: 5px;
+          grid-gap: 30px;
+        }
+        
+        .popup .title {
+          font-size: 19px;
+          color: #9cbde2;
+        
+        }
+        
+        .card__date , .popup {
+          opacity: 0;
+          transition: all 5s ease;
+        }
+        
+        .card:hover {
+          transform: rotate3d(5, 5, 10, -45deg);
+        }
+        
+        .card:hover .card__date , .card:hover .popup {
+          opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="popup">
+        <p class="title"> It's MY BIRTHADAY</p>
+        <p>THIS IS SPECIAL FOR MEHH</p>
+    </div>
+
+  <div class="card__date">
+    <span class="time">Birth Time:</span>
+    <span class="time1">05:00am</span>
+    <span class="date1">Birth Date:</span>
+    <span class="date">25-05-2005</span>
+  </div>
+    
+
+</div>
+</body>
+</html>

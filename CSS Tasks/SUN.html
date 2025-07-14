@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .sun{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%) rotate(47deg);
+            
+        }
+        .star{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(245, 245, 17);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .center{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 80%;
+            background: radial-gradient(rgb(203, 171, 26) 40%, rgb(29, 153, 224) 100%, rgb(29, 153, 224) 10% );
+        }
+        .star:hover{
+            background-color: rgb(143, 26, 166);
+        }
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <div class="star" style=" transform: rotate(45deg);"></div>
+        <div class="star" style=" transform: rotate(65deg);"></div>
+                <div class="star" style=" transform: rotate(25deg);"></div>
+        <div class="star"></div>
+        <div class="center"></div>
+    </div>
+</body>
+</html>

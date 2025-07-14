@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    .content{
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      background: linear-gradient(rgba(65, 27, 27, 0.5), rgba(88, 12, 81, 0.5)), url("./gliter.jpg");
+      background-position: center center;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+    }
+    .cta{
+        width: fit-content;
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        background-color: rgb(1, 14, 1);
+        color: white;
+        font-weight: bold;
+    }
+    .A{
+        width: 70%;
+       font-size: 20px;
+       color: rgba(15, 13, 13, 0.75);
+    } 
+    .target {
+            display: none;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .target>.content {
+            width: 50%;
+            height: 500px;
+            background-color: rgb(255, 0, 187);
+            position: absolute;
+            left: 25%;
+            top: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .target>.content>h1 {
+            color: white;
+        }
+
+        .target>.content>button {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            padding: 1rem;
+            border: 0;
+        }
+
+        input:checked+.target {
+            display: block;
+        }
+
+        .trigger-button {
+            display: block;
+            padding: 1rem;
+            background-color: rgb(7, 7, 8);
+            color: white;
+            margin: 2rem;
+            width: fit-content;
+        }
+</style>
+<body>
+    
+    <div class="content">
+                <h1 class="title">Dedicated to AltCampous' friends and family</h1>
+                <p class="A">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius harum similique iure debitis, totam
+                    explicabo possimus facere earum vero quibusdam quas fuga quisquam assumenda porro doloribus quia
+                    eveniet ea fugit.
+                </p>
+    <label class="trigger-button" for="trigger"><i class="bi bi-caret-right-square-fill"></i> Register Now</label>
+    <input id="trigger" type="checkbox" hidden>
+
+    <div class="target">
+        <div class="content">
+            <h1>Sing In :</h1>
+    <form>
+       <label for="name"> Username:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password"><br>
+    </form>
+            <button>
+                <label for="trigger">close</label></button>
+        </div>
+    </div>
+                
+     </div>
+</body>
+</html>

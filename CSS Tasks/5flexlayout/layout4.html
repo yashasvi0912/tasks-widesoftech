@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Layout Example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      gap: 10px;
+      padding: 10px;
+      background: #e9f3f3;
+    }
+
+    header, footer {
+      background: #18c1b8;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
+      gap: 10px;
+    }
+
+    aside {
+      flex: 1;
+      background: #6fd76f;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+    }
+
+    article {
+      flex: 3;
+      background: #f7a14d;
+      background-image: url(../panda.jpg.jpg);
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+    }
+
+    .images {
+      display:flex;
+      justify-content:space-between;
+      margin-top: 20px;
+    }
+
+    .images div {
+      background: #fbb757;
+      flex: 1;
+      margin: 0 5px;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .images div:first-child {
+      margin-left: 0;
+    }
+
+    .images div:last-child {
+      margin-right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <div class="main">
+      <aside>Aside</aside>
+      <article>
+        Article
+        <div class="images">
+          <div>Image</div>
+          <div>Image</div>
+          <div>Image</div>
+        </div>
+      </article>
+    </div>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

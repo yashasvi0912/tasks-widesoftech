@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:'Times New Roman', Times, serif'
+        }
+        .xyz{
+            width: 400px;
+            height: 200px;
+            border: 0.025rem solid black;
+            background-image: url(./wave.png);
+            
+        }
+        .intro{
+            width: 50%;
+            height: 20vh;
+            background: rgba(225, 225, 225, 1);
+            justify-content: center;
+            align-items: center;
+            padding:10rem;
+            border: 1rem solid;
+        }
+        .profile {
+            flex: 1 1;
+            display: grid;
+            grid-template-columns: 15% auto;
+            gap: 10px;
+        }
+         .img{
+            width: 50px;
+            height: 50px;
+            background: rgb(174, 19, 185) url("../panda.jpg.jpg");
+            border-radius: 100%;
+            background-position: center center;
+            background-size: cover;
+
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .MyIntro{
+            display: flex;
+           flex-direction: column;
+           padding: 10px;
+          
+           
+            
+            
+        }
+        .button {
+            flex: 1 1;
+            padding: 0.5rem 1rem;
+            border-radius: 14px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            
+        }
+        .aAB{
+            flex: 1 1 ;
+            display: grid;
+            gap: 1px;
+            grid-template-columns: 25% 25% 25%;
+            color: rgb(21, 19, 19);
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0.5rem 0.5rem;
+            border-radius: 10px;
+            border: none;
+           
+            
+        }
+        .a{
+            display: flex;
+            flex-direction: column;
+            
+        }
+         .A{
+            display: flex;
+            flex-direction: column;
+            
+        }
+         .B{
+            display: flex;
+            flex-direction: column;
+        }
+       
+
+      
+
+    </style>
+
+</head>
+<body>
+    <div class="intro">
+        <div class="xyz">
+        <div >
+            <div class="profile">
+                    <div class="img"></div>
+                    <div class="text">
+                        <span class="title">sakshi belkhede</span>
+                        <span class="tag">@github.com</span>
+                    </div>
+          </div>
+        </div>
+        <div class="MyIntro"><p>I am sakshi belkhede</p>
+                <p>[I'am studying in 4th year CSE]</p></div>
+        <div class="aAB">
+            <div class="a">
+            <span class="1">15k</span>
+            <span class="11">Views</span>
+            </div>
+         <div class="A">
+            <span class="2">82</span>
+            <span class="22">Project</span>
+          </div>
+          <div class="B">
+            <span class="3">100</span>
+            <span class="33">Follower</span>
+          </div>
+        </div>
+            <div class="tile">
+                <button class="button">Follow</button>
+                <button class="button">View Profile</button>
+            </div>   
+        </div>
+</div>
+    </div>
+</body>
+</html>

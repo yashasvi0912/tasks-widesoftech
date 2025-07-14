@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .xyz{
+         width: 500px;
+            height: 400px;
+            border: 5px solid rgb(9, 35, 15);
+            margin: 4rem auto;
+            padding: 1rem;
+            background-color: rgb(39, 24, 52);
+            text-align: center;
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            row-gap: 7px;
+            column-gap: 5px;
+        }
+        .A{
+            background-color: rgb(66, 10, 231);
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:1;
+            grid-column-end:5;
+        }
+        .B{
+            background-color: rgb(73, 174, 202);
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start:1;
+            grid-column-end:4;
+        }
+        .C{
+            background-color: rgb(180, 17, 131);
+              grid-row-start:3;
+            grid-row-end:4;
+            grid-column-start:1;
+            grid-column-end:2;
+        }
+        .D{
+            background-color: rgb(251, 255, 20); 
+            grid-row-start:4;
+            grid-row-end:5;
+            grid-column-start:1;
+            grid-column-end:4;
+        }
+        
+        .E{
+            background-color: rgb(7, 159, 173);
+              grid-row-start:5;
+            grid-row-end:6;
+            grid-column-start:1;
+            grid-column-end:3;
+        }
+         .F{
+            background-color: rgb(13, 98, 121);
+            grid-row-start:6;
+            grid-row-end:7;
+            grid-column-start:1;
+            grid-column-end:4;
+        }
+        .G{
+            background-color: rgb(161, 194, 18);
+             grid-row-start:7;
+            grid-row-end:8;
+            grid-column-start:1;
+            grid-column-end:2;
+        }
+        .H{
+            background-color: rgb(17, 142, 180);  
+            grid-row-start:8;
+            grid-row-end:9;
+            grid-column-start:1;
+            grid-column-end:5;
+        }
+    </style>
+</head>
+<body>
+    <div class="xyz">
+        <div class="A">1</div>
+        <div class="B">2</div>
+        <div class="C">3</div>
+        <div class="D">4</div>
+        <div class="E">5</div>
+        <div class="F">6</div>
+        <div class="G">7</div>
+        <div class="H">8</div>
+    </div>
+    
+</body>
+</html>

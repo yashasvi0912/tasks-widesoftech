@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        h2{
+            text-align: center;
+            margin: 4rem auto;
+            text-decoration: underline rgb(245, 15, 184);
+            text-shadow: 5px 5px 5px ;
+        }
+        .container{
+            width: 600px;
+            height: 200px;
+            border: 5px solid rgb(9, 35, 15);
+            margin: 4rem auto;
+            background-color: rgb(51, 11, 89);
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 7px;
+            column-gap: 5px;
+            justify-content: center;
+            text-align:center;
+            
+        }
+        .child-1{
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:1;
+            grid-column-end:3;
+            background-color: rgb(211, 112, 59);
+        }
+        .child-2{
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:3;
+            grid-column-end:4;
+            background-color: rgb(208, 226, 43);
+        }
+         .child-3{
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start:1;
+            grid-column-end:2;
+            background-color: rgb(230, 117, 18);
+        }
+         .child-4{
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start:2;
+            grid-column-end:3;
+            background-color: rgb(228, 147, 17);
+        }
+         .child-5{
+            grid-row-start:3;
+            grid-row-end:4;
+            grid-column-start:1;
+            grid-column-end:4;
+            background-color: rgb(229, 82, 29);
+        }
+         .child-6{
+            grid-row-start:4;
+            grid-row-end:5;
+            grid-column-start:1;
+            grid-column-end:2;
+            background-color: rgb(241, 46, 7);
+         }
+
+    </style>
+</head>
+<body>
+    <h2> "Animal Name Chart"</h2>
+    <div class="container">
+        <div class="child child-1">dog</div>
+        <div class="child child-2">cat</div>
+        <div class="child child-3">tiger</div>
+        <div class="child child-4">lion</div>
+        <div class="child child-5">peacock</div>
+        <div class="child child-6">bird</div>
+    </div>
+</body>
+</html>

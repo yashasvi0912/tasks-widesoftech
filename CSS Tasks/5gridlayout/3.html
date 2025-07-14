@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+        width: 700px;
+        height: 700px;
+        border: 5px solid rgb(9, 35, 15);
+        margin: 4rem auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 7px;
+        column-gap: 5px;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        background-color: rgb(96, 51, 138);
+      }
+      .child-1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: rgb(18, 84, 47);
+      }
+      .child-2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: rgb(13, 97, 170);
+      }
+      .child-3 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        background-color: rgb(158, 140, 134);
+        
+      }
+      .child-4 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: rgb(171, 175, 58);
+      }
+      .text{
+        width: 515px;
+        height: 320px;
+        border: 2px solid rgb(9, 35, 15);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 7px;
+        column-gap: 5px;
+        justify-content: center;
+        text-align: center;
+      
+
+      }
+      .A {
+        background-color: rgb(105, 73, 201);
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      .B {
+        background-color: rgb(73, 174, 202);
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+      .C {
+        background-color: rgb(127, 35, 99);
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 5;
+      }
+      .D {
+        background-color: rgb(115, 116, 57);
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .E {
+        background-color: rgb(7, 159, 173);
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .F {
+        background-color: rgb(13, 98, 121);
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+      .G{
+        background-color: rgb(99, 23, 75);
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child-1">1</div>
+      <div class="child child-2">2</div>
+      <div class="child child-3">3
+        <div class="text">
+         <div class=" A">dog</div>
+         <div class=" B">cat</div>
+         <div class=" C">tiger</div>
+         <div class=" D">lion</div>
+         <div class=" E">peacock</div>
+         <div class="F">bird</div>
+         <div class="G">rabbit</div>
+        </div>
+      </div>
+      <div class="child child-4">4</div>
+    </div>
+  </body>
+</html>

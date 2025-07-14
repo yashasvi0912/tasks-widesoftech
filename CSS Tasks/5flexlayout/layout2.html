@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+        flex-direction: row;
+        background-image: url(../panda.jpg.jpg);
+        border: 3px double rgb(4, 13, 19);
+        display: flow-root;
+        align-items: flex-start;
+        font-weight: 900 ;
+        height: 243px
+    }
+    .box div {
+      background-color: rgba(178, 28, 143, 0.2);
+      border: 2px solid rgb(75, 35, 71);
+      border-radius: 5px;
+      padding: 20px;
+      flex-grow:1;
+    
+    }
+ </style>
+</head>
+<body>
+    <div class="box">
+  <div>One</div>
+  <div>Two</div>
+  <div class="selected">Three</div>
+  <div>Four</div>
+</div>
+
+</body>
+</html>
