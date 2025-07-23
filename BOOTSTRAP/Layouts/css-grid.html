@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5/bootstrap-5/css/bootstrap.css">
+</head>
+<body>
+    <div class="container mt-5">
+  <h4 class="text-center mb-4">CSS Grid</h4>
+
+  <div class=" d-grid gap-3  " style="grid-template-columns: repeat(4, 1fr);">
+    <div class="bg-primary text-white p-3 text-center rounded" style="grid-column: span 2 ;"></div>
+    <div class="bg-success text-white p-3 text-center rounded"></div>
+    <div class="bg-warning text-dark p-3 text-center rounded"></div>
+    <div class="bg-danger text-white p-3 text-center rounded" style="grid-column: 1 / -1;"></div>
+    <div class="bg-info text-white p-3 text-center rounded"></div>
+    <div class="bg-secondary text-white p-3 text-center rounded" style="grid-column: span 3 ;"></div>
+  </div>
+</div>
+</body>
+</html>
