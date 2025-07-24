@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5/bootstrap-5/css/bootstrap.css">
+</head>
+<body>
+
+<div class="container p-2  mx-5 my-5 ">
+  <h2 class="mb-4">Contact Form</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="3" placeholder="Type your message"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label d-block">Gender</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+        <label class="form-check-label" for="male">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+        <label class="form-check-label" for="female">Female</label>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="country" class="form-label">Country</label>
+      <select class="form-select" id="country">
+        <option selected>Select country</option>
+        <option value="1">India</option>
+        <option value="2">USA</option>
+        <option value="3">UK</option>
+      </select>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="terms">
+      <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+    </div>
+    <button type="submit" class="btn btn-light">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
