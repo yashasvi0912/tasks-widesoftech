@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5/bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h2> offcanvas start and backdrop static </h2>
+            <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#myOffcanvas">
+             Open 
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" id="myOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                 This is a simple offcanvas panel.
+                 </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="container">
+            <h1>  offcanvas right  </h1>
+            <button class="btn btn-outline-warning" data-bs-toggle="offcanvas" data-bs-target="#a">
+             click 
+            </button>
+            <div class="offcanvas offcanvas-end "  id="a">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                 This is a right offcanvas.
+                 </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="container">
+            <h1> offcanvas bottom </h1>
+            <button class="btn btn-info" data-bs-toggle="offcanvas" data-bs-target="#b">
+             Open
+            </button>
+            <div class="offcanvas offcanvas-bottom" id="b">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                 This is a bottom offcanvas.
+                 </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="container">
+            <h1> offcanvas top </h1>
+            <button class="btn btn-outline-info" data-bs-toggle="offcanvas" data-bs-target="#c">
+             Open
+            </button>
+            <div class="offcanvas offcanvas-top" id="c">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                 This is a top offcanvas.
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

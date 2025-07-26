@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5/bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <div class="container-fluid mx-5 my-5 ">
+        <div class="container">
+            <h1>collapse example</h1><br>
+
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExample" >
+           toggle Content
+          </a>
+          <div class="collapse" id="collapseExample">
+               <div class="bg-light">
+                  This is a simple collapsible content section that opens and closes with the button.
+               </div>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid mx-5 my-5 ">
+        <div class="container">
+
+          <h1 >horizontal collapse </h1><br>
+
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#xyz" >
+           toggle Content
+          </a>
+          <div class="collapse collapse-horizontal" style="min-height: 120px;" id="xyz">
+               <div class="bg-info " style="width: 100px;">
+                  this is the horizontal collapse
+               </div>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid mx-5 my-5 ">
+        <div class="container">
+
+          <h1 > Multiple toggles and targets </h1><br>
+
+          <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#x" >
+           toggle Content
+          </a>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#y">toggle 2nd </button>
+          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse">toggle 3rd </button>
+          <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="x">
+                        <div class="bg-info ">
+                         multipule toggle and target
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="col">
+                <div  class="collapse multi-collapse" id="y">
+                    <div class="bg-warning">
+                        multipule toggle and target
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
