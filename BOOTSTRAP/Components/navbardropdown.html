@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5/bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+     <h1> navbar with dropdown </h1><br>
+
+        <nav class="navbar navbar-expand-lg  bg-warning">
+            <div class="container-fluid mx-5 my-5">
+                <a class="navbar-brand" href="#">Dropdown</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#a">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="a">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#">App Development</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-4">
+                        <input class="form-control" type="search" placeholder="search here...">
+                        <button class="btn btn-outline-success ">search</button>
+                 </div>
+                </div>
+            </div>
+        </nav>
+</body>
+</html>
