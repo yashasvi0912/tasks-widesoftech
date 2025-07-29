@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5/bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+
+<div class="container mt-5 text-center">
+  <h3>Click the button to open modal</h3><br>
+  <button type="button" class=" p-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Launch Modal 
+  </button>
+</div>
+<div class="modal fade" id="myModal" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Modal Title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam itaque illo dolores praesentium esse nemo unde similique, inventore sequi consectetur pariatur ullam obcaecati natus quas molestiae sit vel. Totam, magnam!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container mt-5 text-center ">
+    <h1>modal with image</h1><br>
+    <button class=" btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#imageModal">View Image</button>
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            <img src="./education.jpg" class="img-fluid rounded-top" alt="Image">
+            <div class="modal-body text-center">
+                <p class="mb-0"> This is an image inside a modal.</p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+<br>
+
+<div class="container text-center mt-5 p-5">
+  <button class=" p-4 btn btn-danger" data-bs-toggle="modal" data-bs-target="#firstModal">Open First Modal</button>
+</div>
+<div class="modal fade" id="firstModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">First Modal</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        This is the first modal.<br>
+        <button class="btn btn-info mt-3" data-bs-target="#secondModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+          Open Second Modal
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="secondModal" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">Second Modal</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        This is the second modal.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+</body>
+</html>
