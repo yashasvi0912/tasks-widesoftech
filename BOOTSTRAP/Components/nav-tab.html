@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5/bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+     <div class="container-fluid">
+        <div class="container mt-5">
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="nav-item">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact">Contact</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="home">
+                    <p>This is the Home .</p>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <p>This is the Profile.</p>
+                </div>
+                <div class="tab-pane fade" id="contact" >
+                    <p>This is the Contact .</p>
+                </div>
+            </div>
+            <br>
+            
+            <h1>vertical tabs</h1><br>
+
+            <div class="row bg-dark navbar-dark text-light">
+                <div class="col-3">
+                    <div class="nav flex-column nav-tabs" id="v-tabs" >
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#v-home">Home</button>
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#v-about">About</button>
+                    </div>
+                </div>
+                <div class="col-9 bg-light text-dark">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="v-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima quia, iure neque esse quidem fugit at sunt itaque quasi dicta distinctio non! Eligendi maiores est, repudiandae nam aliquam corporis!</div>
+                        <div class="tab-pane fade" id="v-about"><img src="./nature.jpg.jpg" class="w-100 " alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h1>dropdown nav tab</h1>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#main">Main</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">More</a>
+                  <ul class="dropdown-menu  ">
+                    <li><a class="dropdown-item" data-bs-toggle="tab" href="#sub1">frontend</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tab" href="#sub2">database</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <div class="tab-content mt-2 ">
+              <div class="tab-pane fade show active" id="main">mearn stack</div>
+              <div class="tab-pane fade" id="sub1">html&css</div>
+              <div class="tab-pane fade" id="sub2">sQl</div>
+            </div>
+
+        </div>
+     </div>
+</body>
+</html>
